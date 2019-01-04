@@ -1,11 +1,12 @@
-function showPopup() {
-    var btnShow = document.getElementsByClassName("popup")[0];
 
-    btnShow.classList.add("popup_active");
-}
+$(document).ready(function () {
 
-function hidePopup() {
-    var btnShow = document.getElementsByClassName("popup")[0];
+    $('#btnPopupShow').click(function (e) { 
+        $('.popup').addClass('popup_active');
+    });
 
-    btnShow.classList.remove("popup_active");
-}
+    $('#btnClose').click(function(){
+        $('.popup').removeClass('popup_active');
+    });
+
+});
