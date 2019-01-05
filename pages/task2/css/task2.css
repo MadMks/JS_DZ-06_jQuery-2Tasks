@@ -1,5 +1,15 @@
+html, body{
+    height: 100%;
+}
+
+.main-nav{
+    padding: 20px 20px 0px;
+}
+
 .tabs-content{
-    background-color: #cccccc;
+    background-color: #f3f3f3;
+    position: fixed;
+    height: 100%;
 }
 
 .tabs-content > .tabs-pane{

@@ -1,10 +1,12 @@
 $(function(){
     var tab = $('a[data-toggle="tab"]');
 
+    var top = $('.main-nav').outerHeight();
+    $('.tabs-content').css('top', top);
+
     tab.on('click', function () {
-        // event.preventDefault();
         $('.main-tabs .active').removeClass('active');
-        $(this).parent().toggleClass('active');
+        $(this).toggleClass('active');
 
         var target = $(this).attr('href');
         $(target).toggleClass('active');
