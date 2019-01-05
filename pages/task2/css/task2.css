@@ -1,0 +1,11 @@
+.tabs-content{
+    background-color: #cccccc;
+}
+
+.tabs-content > .tabs-pane{
+    display: none;
+}
+
+.tabs-content > .active{
+    display: block;
+}
